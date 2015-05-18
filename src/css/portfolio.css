@@ -21,7 +21,7 @@
     position: relative;
 }
 
-#pagenav {
+.pagenav {
     background-color: #fff;
     	width: 275px;
 	height: 80px;
@@ -41,7 +41,7 @@ box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.31);
 
     .back {
         position: relative;
-        display: none;
+        display: block;
     }
 
     #logoleft {

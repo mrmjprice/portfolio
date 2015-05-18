@@ -4,11 +4,13 @@
         <title>Martin Price - Creative Designer</title>
         <link rel="stylesheet" type="text/css" href="src/css/reset.css">
         <link rel="stylesheet" type="text/css" href="src/css/portfolio.css">
+                <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="src/js/jquery.flip.js"></script>
     </head>
     <body>
         <div id="frame">
             <div id="bg-img">
-                <div id="pagenav">
+                <div class="pagenav">
                 <div class="front">
                     <div id="logoleft">
                         <img src="src/img/motif.svg" width="50px">
@@ -31,14 +33,11 @@
                 </div>
             </div>
         </div>
-        <script src="http://code.jquery.com/jquery-latest.min.js">
-<script src="src/js/jquery.flip.js">
-    
         <script type="text/javascript">
     $(function(){
       // $(".card").flip();
       
-      $("#buscard").flip({
+      $(".pagenav").flip({
         axis: "x", // y or x
         reverse: false, // true and false
         trigger: "hover", // click or hover
