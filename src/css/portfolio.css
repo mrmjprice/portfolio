@@ -135,3 +135,81 @@ box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.31);
         color: #2a2a2a;
         vertical-align: middle;
     }
+
+    #content {
+        width: 750px;
+        height: 252px;
+        background-color: #fff;
+            position: absolute;
+            bottom: 50px;
+        right: 0px;
+    }
+
+    #titles {
+        float: right;
+        padding-top: 20px;
+    }
+
+    h1 {
+        font-family: Roboto, sans-serif;
+        font-weight: bold;
+        font-size: 72px;
+        margin-right: 20px;
+        margin-bottom: 5px;
+        color: #000;
+    }
+
+    h2 {
+        font-family: Roboto, sans-serif;
+        font-weight: 100;
+        font-size: 20px;
+        text-align: right;
+        padding-right: 30px;
+    }
+
+    #controls {
+        height: 350px;
+        width: 84px;
+        text-align: center;
+        line-height: 84px;
+    }
+
+    .prev {
+        height: 84px;
+        background-color: #0f0f0f;
+    }
+
+    .next {
+        height: 84px;
+        background-color: #0f0f0f;
+    }
+
+    .behance {
+        height: 84px;
+        background-color: rgba(23, 105, 255, 1.0);
+    }
+
+    #description {
+        width: 613px;
+        height: 110px;
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+        }
+
+    .three-col {
+        font-family: Roboto, sans-serif;
+        font-size: 11px;
+        color: #545454;
+        line-height: 16px;
+        padding-top: 20px;
+       -moz-column-count: 3;
+       -moz-column-gap: 20px;
+       -webkit-column-count: 3;
+       -webkit-column-gap: 20px;
+        }
+
+#controls {
+    color: #FFF;
+    font-size: 3em;
+}
