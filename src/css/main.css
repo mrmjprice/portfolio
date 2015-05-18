@@ -1,0 +1,159 @@
+/* CSS */
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+
+#frame {
+ box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  width:100hw;
+  height:100vh;
+  border:50px solid white;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+#bg-img {
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/img/bg-img.jpg");
+    position: relative;
+}
+
+.buscard-container {
+    background-color: #fff;
+    	width: 50%;
+	height: 50%;
+      margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.31);
+-moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.31);
+box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.31);
+}
+
+#buscard-front {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+/* 'Front' of card - ID
+
+>> logoleft is 50% width with SVG in the middle. nameright is 50% with text in the vertical centre <<
+
+*/
+
+#logoleft {
+    width: 50%;
+    height: 100%;
+    margin: 0; padding: 0;
+    float: left;
+    vertical-align: top;
+}
+
+#logoleft img {
+    margin: 0 auto;
+    margin-left: 25%;
+    margin-top: 21%;
+}
+
+#nameright {
+    width: 50%;
+    float: right;
+    margin-top: 20%;
+    display: block;
+}
+
+#nameright h1 {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+}
+
+#nameright h2 {
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #645f5f;
+    margin-bottom: 20px;
+}
+
+#nameright p {
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+    color: #d7d7d7;
+}
+
+/* 'Back' of card - NAV MENU
+
+>> Have been trying to get the nav menu to be a 2X2 grid - Dimensions being width: 50%, height: 50%. Links then in the centre of the boxes <<
+
+*/
+
+#buscard-back a{
+    font-family: Roboto, sans-serif;
+    font-weight: 200;
+    font-size: 3em;
+    z-index: 1000;
+    list-style-type: none;
+        color: #000;
+    text-decoration: none;
+}
+
+.topleft {
+    float: left;
+    width: 50%;
+    height: 182px;
+    position: relative;
+}
+
+.topleft a {
+        position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    text-align: center;
+        padding-top: 18%;
+}
+
+.topright {
+    float: right;
+    width: 50%;
+    height: 182px;
+    position: relative;
+}
+
+.topright a {
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+        text-align: center;
+    padding-top: 18%;
+}
+
+.bottomleft {
+    float: left;
+    width: 50%;
+    height: 182px;
+    position: relative;
+        text-align: center;
+}
+
+.bottomleft a {
+        position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+        padding-top: 18%;
+}
+
+.bottomright {
+    float: right;
+    width: 50%;
+    height: 182px;
+    position: relative;
+        text-align: center;
+}
+
+.bottomright a {
+        position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+        padding-top: 18%;
+}
