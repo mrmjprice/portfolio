@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Martin Price - Creative Designer</title>
+        <link rel="stylesheet" type="text/css" href="src/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="src/css/portfolio.css">
+    </head>
+    <body>
+        <div id="frame">
+            <div id="bg-img">
+                <div id="pagenav">
+                <div class="front">
+                    <div id="logoleft">
+                        <img src="src/img/motif.svg" width="50px">
+                    </div>
+                    <div id="nameright">
+                        <h1>Martin Price</h1>
+                        <h2>creative designer</h2>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="topleft"><a href="#">Portfolio</a></div>
+                    <div class="topright"><a href="#">LinkedIn</a></div>
+                    <div style="clear:both"></div>
+                    <div class="bottomleft"><a href="#">About</a></div>
+                    <div class="bottomright"><a href="#">Contact</a></div>
+                </div>
+                    <div id="backto">
+                        <a href="#">Back to Portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="http://code.jquery.com/jquery-latest.min.js">
+<script src="src/js/jquery.flip.js">
+    
+        <script type="text/javascript">
+    $(function(){
+      // $(".card").flip();
+      
+      $("#buscard").flip({
+        axis: "x", // y or x
+        reverse: false, // true and false
+        trigger: "hover", // click or hover
+        speed: 1000
+      });
+    });
+    </script>
+        
+    </body>
+</html>
