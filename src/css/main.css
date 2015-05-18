@@ -8,7 +8,7 @@
   -webkit-box-sizing:border-box;
   width:100hw;
   height:100vh;
-  border:50px solid white;
+  border:35px solid white;
     position: relative;
     overflow: hidden;
     
@@ -23,8 +23,8 @@
 
 .buscard-container {
     background-color: #fff;
-    	width: 50%;
-	height: 50%;
+    	width: 660px;
+	height: 380px;
       margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
@@ -36,7 +36,7 @@ box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.31);
 #buscard-front {
     width: 100%;
     height: 100%;
-    display: block;
+    display: none;
 }
 
 /* 'Front' of card - ID
@@ -46,21 +46,22 @@ box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.31);
 */
 
 #logoleft {
-    width: 50%;
-    height: 100%;
+    width: 300px;
+    height: 380px;
     margin: 0; padding: 0;
     float: left;
-    vertical-align: top;
+    position: relative;
 }
 
 #logoleft img {
-    margin: 0 auto;
-    margin-left: 25%;
-    margin-top: 21%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #nameright {
-    width: 50%;
+    width: 355px;
     float: right;
     margin-top: 20%;
     display: block;
@@ -69,13 +70,13 @@ box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.31);
 #nameright h1 {
     font-family: Roboto, sans-serif;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 #nameright h2 {
     font-family: Roboto, sans-serif;
     font-weight: 300;
-    font-size: 40px;
+    font-size: 30px;
     color: #645f5f;
     margin-bottom: 20px;
 }
@@ -83,6 +84,7 @@ box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.31);
 #nameright p {
     font-family: Roboto, sans-serif;
     font-weight: 100;
+    font-size: 15px;
     color: #d7d7d7;
 }
 
@@ -91,6 +93,11 @@ box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.31);
 >> Have been trying to get the nav menu to be a 2X2 grid - Dimensions being width: 50%, height: 50%. Links then in the centre of the boxes <<
 
 */
+
+#buscard-back {
+    display:block;
+    position: relative;
+}
 
 #buscard-back a{
     font-family: Roboto, sans-serif;
@@ -103,10 +110,11 @@ box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.31);
 }
 
 .topleft {
-    float: left;
     width: 50%;
-    height: 182px;
-    position: relative;
+    height: 50%;
+    position: absolute;
+    bottom: 100%;
+    left: 0%;
 }
 
 .topleft a {
@@ -117,10 +125,11 @@ box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.31);
 }
 
 .topright {
-    float: right;
     width: 50%;
-    height: 182px;
-    position: relative;
+    height: 50%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
 }
 
 .topright a {
@@ -131,10 +140,11 @@ box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.31);
 }
 
 .bottomleft {
-    float: left;
     width: 50%;
-    height: 182px;
-    position: relative;
+    height: 50%;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
         text-align: center;
 }
 
@@ -144,12 +154,17 @@ box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.31);
         padding-top: 18%;
 }
 
-.bottomright {
-    float: right;
-    width: 50%;
-    height: 182px;
+nav {
     position: relative;
-        text-align: center;
+}
+
+.bottomright {
+    width: 330px;
+    height: 190px;;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    text-align: center;
 }
 
 .bottomright a {
